@@ -7,13 +7,12 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { BasicScene } from "@/BabylonsExamples/BasicScene";
-
+import { StandardMaterials } from "@/BabylonsExamples/StandardMaterials";
 export default defineComponent({
   name: "BabylonsExamples",
   mounted() {
     const canvas = document.querySelector("canvas")!;
-    new BasicScene(canvas);
+    new StandardMaterials(canvas);
   },
 });
 </script>
